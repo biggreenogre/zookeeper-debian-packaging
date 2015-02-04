@@ -1,14 +1,8 @@
-zookeeper (3.4.6-5) precise; urgency=medium
+zookeeper (3.4.6-3sd1) precise; urgency=medium
 
   * fix jdk dependency
 
- -- Pedro Pessoa <pessoa@serverdensity.com>  Wed, 04 Feb 2015 18:19:38 +0100
-
-zookeeper (3.4.6-4) precise; urgency=medium
-
-  * Build for precise
-
- -- Pedro Pessoa <pessoa@serverdensity.com>  Wed, 04 Feb 2015 14:19:38 +0100
+ -- Pedro Pessoa <pessoa@serverdensity.com>  Wed, 04 Feb 2015 20:19:38 +0100
 
 zookeeper (3.4.6-3) experimental; urgency=medium
 
