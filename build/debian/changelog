@@ -1,18 +1,6 @@
-zookeeper (3.4.6-3sd1.4) precise; urgency=medium
-
-  * Disabled tests, second try...
-
- -- Carlos Perelló Marín <carlos@serverdensity.com>  Wed, 04 Feb 2015 23:28:17 +0100
-
-zookeeper (3.4.6-3sd1.3) precise; urgency=medium
-
-  * Disabled tests, launchpad's ppa are too slow for them...
-
- -- Carlos Perelló Marín <carlos@serverdensity.com>  Wed, 04 Feb 2015 22:26:21 +0100
-
 zookeeper (3.4.6-3sd1.2) precise; urgency=medium
 
-  * Rebuild to test junit failure.
+  * Disabled tests, launchpad's ppa are too slow for them...
 
  -- Carlos Perelló Marín <carlos@serverdensity.com>  Wed, 04 Feb 2015 21:50:44 +0100
 
