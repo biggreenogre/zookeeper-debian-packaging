@@ -1,8 +1,32 @@
-zookeeper (3.4.6-3sd1) precise; urgency=medium
+zookeeper (3.4.6-3sd1.4) precise; urgency=medium
+
+  * Disabled tests, second try...
+
+ -- Carlos Perelló Marín <carlos@serverdensity.com>  Wed, 04 Feb 2015 23:28:17 +0100
+
+zookeeper (3.4.6-3sd1.3) precise; urgency=medium
+
+  * Disabled tests, launchpad's ppa are too slow for them...
+
+ -- Carlos Perelló Marín <carlos@serverdensity.com>  Wed, 04 Feb 2015 22:26:21 +0100
+
+zookeeper (3.4.6-3sd1.2) precise; urgency=medium
+
+  * Rebuild to test junit failure.
+
+ -- Carlos Perelló Marín <carlos@serverdensity.com>  Wed, 04 Feb 2015 21:50:44 +0100
+
+zookeeper (3.4.6-3sd1.1) precise; urgency=medium
 
   * fix jdk dependency
 
- -- Pedro Pessoa <pessoa@serverdensity.com>  Wed, 04 Feb 2015 20:19:38 +0100
+ -- Pedro Pessoa <pessoa@serverdensity.com>  Wed, 04 Feb 2015 18:19:38 +0100
+
+zookeeper (3.4.6-3sd1) precise; urgency=medium
+
+  * Build for precise
+
+ -- Pedro Pessoa <pessoa@serverdensity.com>  Wed, 04 Feb 2015 14:19:38 +0100
 
 zookeeper (3.4.6-3) experimental; urgency=medium
 

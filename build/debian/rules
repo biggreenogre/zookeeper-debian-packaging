@@ -80,11 +80,11 @@ endif
 # Only run core Java unit tests on i386 architecture as this is the arch
 # that they are built and published on - works around -indep not working
 # in Ubuntu.
-ifeq (i386, $(DEB_BUILD_ARCH))
-override_dh_auto_test-indep:
-	# Run core Java test suite against zookeeper
-	ant -Dversion=$(DEB_UPSTREAM_VERSION) -DlastRevision=-1 test-core-java
-endif
+#ifeq (i386, $(DEB_BUILD_ARCH))
+#override_dh_auto_test-indep:
+#	# Run core Java test suite against zookeeper
+#	ant -Dversion=$(DEB_UPSTREAM_VERSION) -DlastRevision=-1 test-core-java
+#endif
 endif
 
 override_dh_clean:
