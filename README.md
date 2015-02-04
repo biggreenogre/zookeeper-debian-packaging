@@ -9,4 +9,7 @@ http://ftp.de.debian.org/debian/pool/main/z/zookeeper/zookeeper_3.4.6-3.debian.t
 cd build
 tar xvf ../zookeeper_3.4.6-3.debian.tar.xz
 
-update build/debian/changelog
+update debian/changelog
+debuild -S -sa -k0FF66C63 (twice?)
+dput ppa:serverdensity/zookeeper  ../zookeeper_3.4.6-5_source.changes
+
