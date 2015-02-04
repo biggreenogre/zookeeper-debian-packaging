@@ -1,0 +1,38 @@
+Description: Disable detection of cygwin under Debian installs
+ as this is not compatible with the way the environment is 
+ managed through alternatives.
+ .
+ TODO - review alongside use of alternatives for managing 
+ configuration.
+Author: Akira Kitada <akitada@gmail.com>
+Forwarded: not-needed
+
+Index: zookeeper/bin/zkServer.sh
+===================================================================
+--- zookeeper.orig/bin/zkServer.sh
++++ zookeeper/bin/zkServer.sh
+@@ -69,15 +69,6 @@ then
+     ZOOCFG="$2"
+ fi
+ 
+-if $cygwin
+-then
+-    ZOOCFG=`cygpath -wp "$ZOOCFG"`
+-    # cygwin has a "kill" in the shell itself, gets confused
+-    KILL=/bin/kill
+-else
+-    KILL=kill
+-fi
+-
+ echo "Using config: $ZOOCFG" >&2
+ 
+ if [ -z "$ZOOPIDFILE" ]; then
+@@ -140,7 +131,7 @@ stop)
+     then
+       echo "no zookeeper to stop (could not find file $ZOOPIDFILE)"
+     else
+-      $KILL -9 $(cat "$ZOOPIDFILE")
++      kill -9 $(cat "$ZOOPIDFILE")
+       rm "$ZOOPIDFILE"
+       echo STOPPED
+     fi
