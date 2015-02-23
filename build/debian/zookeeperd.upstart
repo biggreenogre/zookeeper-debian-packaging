@@ -25,3 +25,10 @@ script
     	-- -cp $CLASSPATH $JAVA_OPTS -Dzookeeper.log.dir=${ZOO_LOG_DIR} \
       	-Dzookeeper.root.logger=${ZOO_LOG4J_PROP} $ZOOMAIN $ZOOCFG
 end script
+
+pre-stop script
+    initctl emit zookeeper-shutdown
+    # We need this sleep so kafka has time to write its changes before
+    # shutting down.
+    sleep 5
+end script

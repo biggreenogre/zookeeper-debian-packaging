@@ -1,3 +1,9 @@
+zookeeper (3.4.6-3sd2) precise; urgency=medium
+
+  * Emit zookeeper-shutdown on stop so kafka could be turned off to prevent data corruption
+
+ -- Carlos Perelló Marín <carlos@serverdensity.com>  Wed, 23 Feb 2015 20:01:46 +0100
+
 zookeeper (3.4.6-3sd1.2) precise; urgency=medium
 
   * Disabled tests, launchpad's ppa are too slow for them...
